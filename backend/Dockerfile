@@ -1,4 +1,6 @@
-FROM python:3.9
+FROM python:3.13.18-slim
+
+RUN useradd --system --uid 10001 --no-create-home app
 
 WORKDIR /app
 
@@ -6,6 +8,8 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY app.py .
+
+USER app
 
 EXPOSE 5000
 
