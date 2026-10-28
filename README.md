@@ -13,10 +13,6 @@ FestPass is the registration app for a college tech fest. It has three parts: a 
 | Docker Hub repository | https://hub.docker.com/r/vaibhavgupta5/fest-backend |
 | GitHub repository | https://github.com/vaibhavgupta5/202401100100271-dockerassessment |
 
-## AI tools used
-
-- Claude Code (Anthropic): drafted the Dockerfile, compose file, frontend page, README and overview, and explained errors and Docker, Trivy and cosign options. Every command was run by me on my own machine.
-
 ## Quick start
 
 1. Create the local environment file. It holds the database password and is never committed:
