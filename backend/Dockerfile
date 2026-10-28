@@ -9,6 +9,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY app.py .
 
+ARG APP_VERSION=dev
+ENV APP_VERSION=${APP_VERSION}
+
 USER app
 
 EXPOSE 5000
